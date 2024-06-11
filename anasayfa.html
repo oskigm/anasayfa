@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Tablosu</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px; /* Font size reduced */
+        }
+
+        th, td {
+            padding: 4px; /* Padding reduced */
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            white-space: nowrap; /* Prevent line breaks */
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        @media screen and (max-width: 600px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+                overflow-x: auto; /* Allow horizontal scrolling */
+            }
+
+            tr {
+                display: flex;
+                flex-wrap: nowrap;
+            }
+
+            th, td {
+                padding: 8px;
+                text-align: left; /* Ensure text alignment is consistent */
+                flex: 1;
+            }
+
+            th::before, td::before {
+                float: none;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>SIRA NO</th>
+                <th>T.C.K.N.</th>
+                <th>ADI SOYADI</th>
+                <th>AÇIKLAMA</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>36*****02</td>
+                <td>ABDULKADİR ÇEŞTE</td>
+                <td>ÖRNEK AÇIKLAMA</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
